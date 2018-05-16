@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="Example 13: IDs" title="ex13_insertiondevices" version="2.0" working_directory="/Users/labx/Desktop/Work/Private/Viaggi/2018-02-25 Viaggio USA/Github/ShadowOui-Tutorial" workspace_units="1">
+	<nodes>
+		<node id="0" name="Wiggler" position="(150.0, 165.0)" project_name="OASYS1-ShadowOui" qualified_name="orangecontrib.shadow.widgets.sources.ow_wiggler.Wiggler" title="Wiggler" version="" />
+		<node id="1" name="Plot XY" position="(549.0, 139.0)" project_name="OASYS1-ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY Top View" version="" />
+		<node id="2" name="Undulator Gaussian" position="(157.0, 310.0)" project_name="OASYS1-ShadowOui" qualified_name="orangecontrib.shadow.widgets.sources.ow_undulator_gaussian.UndulatorGaussian" title="Undulator Gaussian" version="" />
+		<node id="3" name="Plot XY" position="(430.0, 310.0)" project_name="OASYS1-ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY (1)" version="" />
+		<node id="4" name="Info" position="(430.0, 459.0)" project_name="OASYS1-ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_info.Info" title="Info" version="" />
+		<node id="5" name="Plot XY" position="(559.0, 246.0)" project_name="OASYS1-ShadowOui" qualified_name="orangecontrib.shadow.widgets.plots.ow_plot_xy.PlotXY" title="Plot XY Phase Space X (retraced)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Input Beam" sink_node_id="1" source_channel="Beam" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Input Beam" sink_node_id="3" source_channel="Beam" source_node_id="2" />
+		<link enabled="true" id="2" sink_channel="Input Beam" sink_node_id="4" source_channel="Beam" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Input Beam" sink_node_id="5" source_channel="Beam" source_node_id="0" />
+	</links>
+	<annotations>
+		<text font-family="Helvetica" font-size="16" id="0" rect="(58.0, 14.0, 521.0, 29.0)">Example 13: Insertion devices. Example of a Wiggler and an Undulator
+
+Note that the full undulator model is not yet available. Here the Undulator as Gaussian approximation is presented.  </text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWA0AAABzaGlmdF94X3ZhbHVlcQFHAAAAAAAAAABYCwAAAGVtaXR0YW5jZV94cQJHPpos
+JiOrKudYEAAAAGVsZWN0cm9uX2N1cnJlbnRxA0vIWAUAAABtaW5feHEER7/wAAAAAAAAWBUAAABv
+cHRpbWl6ZV9zb3VyY2VfY29tYm9xBUsAWBEAAABzaGlmdF9iZXRheF92YWx1ZXEGRwAAAAAAAAAA
+WBAAAABzaGlmdF9iZXRheF9mbGFncQdLAFgFAAAAbWF4X3hxCEc/8AAAAAAAAFgFAAAAZV9taW5x
+CUdAw4WAAAAAAFgFAAAAbWF4X3pxCkc/8AAAAAAAAFgHAAAAa192YWx1ZXELR0AzmZmZmZmaWAsA
+AABlbWl0dGFuY2VfenEMRz4wwBhhisr4WBwAAABmaWxlX3dpdGhfcGhhc2Vfc3BhY2Vfdm9sdW1l
+cQ1YDgAAAE5PTkUgU1BFQ0lGSUVEcQ5YCQAAAHZpZXdfdHlwZXEPSwBYBAAAAHNlZWRxEEoRnlYA
+WA4AAABudW1iZXJfb2ZfcmF5c3ERTYgTWAYAAABlbmVyZ3lxEkdAGCj1wo9cKVgFAAAAbWluX3px
+E0e/8AAAAAAAAFgRAAAAZmlsZV90b193cml0ZV9vdXRxFEsAWBEAAABudW1iZXJfb2ZfcGVyaW9k
+c3EVSwpYFQAAAGRpc3RhbmNlX2Zyb21fd2Fpc3RfenEWRwAAAAAAAAAAWBMAAABmaWxlX3dpdGhf
+aGFybW9uaWNzcRdYBQAAADNQVy5ocRhYBwAAAHNpZ21hX3hxGUc/d1jiIERjylgQAAAAZmlsZV93
+aXRoX2JfdnNfeXEaWAUAAAAzUFcuYnEbWBAAAABpc19hdXRvbWF0aWNfcnVucRyIWAoAAAB0eXBl
+X2NvbWJvcR1LAFgbAAAAbWF4X251bWJlcl9vZl9yZWplY3RlZF9yYXlzcR5LAFgJAAAAaWRfcGVy
+aW9kcR9HP8mZmZmZmZpYDQAAAHNsaXRfZGlzdGFuY2VxIEdAj0AAAAAAAFgUAAAAdXNlX2VtaXR0
+YW5jZXNfY29tYm9xIUsAWAUAAABlX21heHEiR0DDioAAAAAAWBMAAABzYXZlZFdpZGdldEdlb21l
+dHJ5cSNjc2lwCl91bnBpY2tsZV90eXBlCnEkWAwAAABQeVF0NS5RdENvcmVxJVgKAAAAUUJ5dGVB
+cnJheXEmQzIB2dDLAAIAAAAAADcAAAAmAAAFXgAAAvcAAAA3AAAAPAAABV4AAAL3AAAAAAAAAAAG
+kHEnhXEoh3EpUnEqWBUAAABkaXN0YW5jZV9mcm9tX3dhaXN0X3hxK0cAAAAAAAAAAFgHAAAAc2ln
+bWFfenEsRz9Q4CIUJv5yWAoAAABwbG90X2dyYXBocS1LAVgMAAAAc2hpZnRfeF9mbGFncS5LAHUu
+</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWA4AAABjYXJ0ZXNpYW5fYXhpc3EBSwBYCwAAAHhfcmFuZ2VfbWlucQJHAAAAAAAAAABY
+DgAAAHhfY29sdW1uX2luZGV4cQNLAVgLAAAAaW1hZ2VfcGxhbmVxBEsAWAsAAAB5X3JhbmdlX21p
+bnEFRwAAAAAAAAAAWAQAAAByYXlzcQZLAFgUAAAAaXNfY29udmVyc2lvbl9hY3RpdmVxB0sBWAsA
+AABrZWVwX3Jlc3VsdHEISwBYHAAAAGltYWdlX3BsYW5lX3JlbF9hYnNfcG9zaXRpb25xCUsAWBAA
+AABpc19hdXRvbWF0aWNfcnVucQqIWAUAAAB0aXRsZXELWAUAAAAgWSwgWHEMWAcAAAB4X3Jhbmdl
+cQ1LAFgOAAAAbnVtYmVyX29mX2JpbnNxDktkWAsAAAB5X3JhbmdlX21heHEPRwAAAAAAAAAAWBgA
+AABpbWFnZV9wbGFuZV9uZXdfcG9zaXRpb25xEEdAJAAAAAAAAFgOAAAAeV9jb2x1bW5faW5kZXhx
+EUsAWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cRJjc2lwCl91bnBpY2tsZV90eXBlCnETWAwAAABQ
+eVF0NS5RdENvcmVxFFgKAAAAUUJ5dGVBcnJheXEVQzIB2dDLAAIAAAAAAF8AAABAAAAFhgAAAxEA
+AABfAAAAVgAABYYAAAMRAAAAAAAAAAAGkHEWhXEXh3EYUnEZWAcAAAB5X3JhbmdlcRpHAAAAAAAA
+AABYCwAAAHhfcmFuZ2VfbWF4cRtLAFgTAAAAd2VpZ2h0X2NvbHVtbl9pbmRleHEcSxd1Lg==
+</properties>
+		<properties format="pickle" node_id="2">gAN9cQAoWBIAAABzaWdtYV9kaXZlcmdlbmNlX3hxAUc/Ee4/DVwJFVgRAAAAZmlsZV90b193cml0
+ZV9vdXRxAksAWAcAAABzaWdtYV94cQNHP3dY4hllK9RYEgAAAHNpZ21hX2RpdmVyZ2VuY2VfenEE
+Rz7PtXz5+68NWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQVjc2lwCl91bnBpY2tsZV90eXBlCnEG
+WAwAAABQeVF0NS5RdENvcmVxB1gKAAAAUUJ5dGVBcnJheXEIQy4B2dDLAAEAAAAAAFUAAABfAAAF
+fAAAAzAAAABVAAAAdQAABXwAAAMwAAAAAAAAcQmFcQqHcQtScQxYEAAAAGlzX2F1dG9tYXRpY19y
+dW5xDYhYEAAAAHVuZHVsYXRvcl9sZW5ndGhxDkc/+mZmZmZmZlgOAAAAbnVtYmVyX29mX3JheXNx
+D02IE1gHAAAAZGVsdGFfZXEQRz/wAAAAAAAAWAkAAAB2aWV3X3R5cGVxEUsAWAQAAABzZWVkcRJK
+h2JnAFgHAAAAc2lnbWFfenETRz9Q4CIUJv5yWAYAAABlbmVyZ3lxFEdAvpoAAAAAAHUu
+</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWA4AAABjYXJ0ZXNpYW5fYXhpc3EBSwBYCwAAAHhfcmFuZ2VfbWlucQJHAAAAAAAAAABY
+DgAAAHhfY29sdW1uX2luZGV4cQNLA1gLAAAAaW1hZ2VfcGxhbmVxBEsAWAsAAAB5X3JhbmdlX21p
+bnEFRwAAAAAAAAAAWAQAAAByYXlzcQZLAFgUAAAAaXNfY29udmVyc2lvbl9hY3RpdmVxB0sBWAsA
+AABrZWVwX3Jlc3VsdHEISwBYHAAAAGltYWdlX3BsYW5lX3JlbF9hYnNfcG9zaXRpb25xCUsAWBAA
+AABpc19hdXRvbWF0aWNfcnVucQqIWAUAAAB0aXRsZXELWAcAAAAgWCcsIFoncQxYBwAAAHhfcmFu
+Z2VxDUsAWA4AAABudW1iZXJfb2ZfYmluc3EOS2RYCwAAAHlfcmFuZ2VfbWF4cQ9HAAAAAAAAAABY
+GAAAAGltYWdlX3BsYW5lX25ld19wb3NpdGlvbnEQR0AkAAAAAAAAWA4AAAB5X2NvbHVtbl9pbmRl
+eHERSwVYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxEmNzaXAKX3VucGlja2xlX3R5cGUKcRNYDAAA
+AFB5UXQ1LlF0Q29yZXEUWAoAAABRQnl0ZUFycmF5cRVDMgHZ0MsAAgAAAAAAdQAAABcAAAWcAAAC
+6AAAAHUAAAAtAAAFnAAAAugAAAAAAAAAAAaQcRaFcReHcRhScRlYBwAAAHlfcmFuZ2VxGkcAAAAA
+AAAAAFgLAAAAeF9yYW5nZV9tYXhxG0sAWBMAAAB3ZWlnaHRfY29sdW1uX2luZGV4cRxLF3Uu
+</properties>
+		<properties format="pickle" node_id="4">gAN9cQBYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxAWNzaXAKX3VucGlja2xlX3R5cGUKcQJYDAAA
+AFB5UXQ1LlF0Q29yZXEDWAoAAABRQnl0ZUFycmF5cQRDMgHZ0MsAAgAAAAACGAAAALUAAAXNAAAD
+VAAAAhgAAADLAAAFzQAAA1QAAAAAAAAAAAaQcQWFcQaHcQdScQhzLg==
+</properties>
+		<properties format="pickle" node_id="5">gAN9cQAoWA4AAABjYXJ0ZXNpYW5fYXhpc3EBSwFYCwAAAHhfcmFuZ2VfbWlucQJHAAAAAAAAAABY
+DgAAAHhfY29sdW1uX2luZGV4cQNLAFgLAAAAaW1hZ2VfcGxhbmVxBEsBWAsAAAB5X3JhbmdlX21p
+bnEFRwAAAAAAAAAAWAQAAAByYXlzcQZLAVgUAAAAaXNfY29udmVyc2lvbl9hY3RpdmVxB0sBWAsA
+AABrZWVwX3Jlc3VsdHEISwBYHAAAAGltYWdlX3BsYW5lX3JlbF9hYnNfcG9zaXRpb25xCUsAWBAA
+AABpc19hdXRvbWF0aWNfcnVucQqIWAUAAAB0aXRsZXELWAYAAAAgWCwgWCdxDFgHAAAAeF9yYW5n
+ZXENSwBYDgAAAG51bWJlcl9vZl9iaW5zcQ5LZFgLAAAAeV9yYW5nZV9tYXhxD0cAAAAAAAAAAFgY
+AAAAaW1hZ2VfcGxhbmVfbmV3X3Bvc2l0aW9ucRBHAAAAAAAAAABYDgAAAHlfY29sdW1uX2luZGV4
+cRFLA1gTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXESY3NpcApfdW5waWNrbGVfdHlwZQpxE1gMAAAA
+UHlRdDUuUXRDb3JlcRRYCgAAAFFCeXRlQXJyYXlxFUMyAdnQywACAAAAAAA9AAAAHwAABWQAAALw
+AAAAPQAAADUAAAVkAAAC8AAAAAAAAAAABpBxFoVxF4dxGFJxGVgHAAAAeV9yYW5nZXEaRwAAAAAA
+AAAAWAsAAAB4X3JhbmdlX21heHEbSwBYEwAAAHdlaWdodF9jb2x1bW5faW5kZXhxHEsXdS4=
+</properties>
+	</node_properties>
+</scheme>
