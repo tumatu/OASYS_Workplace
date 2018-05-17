@@ -97,11 +97,11 @@ write_srw_format_profile(data,writesrwfile)
 #data=[x_srw,y_srw,z_srw]
 plt.plot(x_srw,z_srw[0])
 plt.show()
- 
+
 
 ####################PSD calculation of new generated profile#########################
 dm = dabam.dabam()
-dm.load_external_profile([(1e-3)*i for i in x_srw],[(1e-3)*i for i in z_srw[0]],type='heights')
+dm.load_external_profile([(1e-3)*i for i in x_srw],[(1e-3)*i for i in z_srw[0]],type='heights')#switch unit from mm to m
 plt.plot(1e3*dm.y,1e9*dm.zHeightsUndetrended)
 plt.show()
 plt.plot(1e3*dm.y,1e9*dm.zHeights)
