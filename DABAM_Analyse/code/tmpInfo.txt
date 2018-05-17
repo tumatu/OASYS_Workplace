@@ -1,0 +1,30 @@
+
+---------- profile results -------------------------
+Remote directory:
+   http://ftp.esrf.eu/pub/scisoft/dabam/data/
+Data File:     dabam-001.dat
+Metadata File: dabam-001.txt
+Surface shape: plane
+Facility:      ESRF
+Scan length: 1200.000 mm
+Number of points: 1201
+
+Linear detrending: z'=5.46078e-05 x-2.49792e-12
+Radius of curvature: 18312.399 m
+Slopes profile:
+         StDev of slopes profile:    0.487 urad
+         from PSD:                   0.487 urad
+         Peak-to-valley: no detrend: 66.318 urad
+                       with detrend: 2.939 urad
+         Skewness: -0.246, Kurtosis: 0.063
+         PSD power law fit: beta:1.681, Df: 1.659
+         Autocorrelation length:0.052
+Heights profile: 
+         StDev of heights profile:   43.854 nm
+         from PSD:                   43.855 nm
+         Peak-to-valley: no detrend: 9895.724 nm
+                       with detrend: 133.999 nm
+         Skewness: -0.167, Kurtosis: -1.454
+         PSD power law fit: beta:3.887, Df: 0.557
+         Autocorrelation length:0.161
+----------------------------------------------------

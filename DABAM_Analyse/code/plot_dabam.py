@@ -416,17 +416,18 @@ for dabam_entry in range(1,57):
     dm.set_input_entryNumber(dabam_entry)
     dm.load()
     self=dm
-    plt.loglog(self.f,self.psdHeights,label=dabam_entry)
+#    plt.loglog(self.f,self.psdHeights,label=dabam_entry)
     y = self.f**(self.powerlaw["hgt_pendent"])*10**self.powerlaw["hgt_shift"]
     i0 = self.powerlaw["index_from"]
     i1 = self.powerlaw["index_to"]
 #    plt.loglog(self.f,y)
-#    plt.loglog(self.f[i0:i1],y[i0:i1])
+    plt.loglog(self.f[i0:i1],y[i0:i1])
     beta = -self.powerlaw["hgt_pendent"]
     shift=-self.powerlaw["hgt_shift"]
     beta_scatter.append(beta)
     shift_scatter.append(shift)
-    plt.title("PSD of heights profile")
+#    plt.title("PSD of heights profile")
+    plt.title("fitted PSD of heights profile")
     # (beta=%.2f,Df=%.2f)"%(beta,(5-beta)/2))
     plt.xlabel("f [m^-1]")
     plt.ylabel("PSD [m^3]")
@@ -462,6 +463,7 @@ for dabam_entry in range(1,57):
                 ))
     txt+=latex+"\n"
     txt_cor+=forcorrelation+'\n'
+#plt.axis([0,1e4,1e-33,1e-12])
 plt.show()
 #print(powerlawl,txt)
 #print(type(dm.zSlopes))
@@ -499,6 +501,7 @@ def plot_correlation_map( df ):
         annot_kws = { 'fontsize' : 12 }
     )
 plot_correlation_map(df)
+plt.show()
 ##################################################
 plt.scatter(beta_scatter,shift_scatter)
 plt.xlabel("abs($\\beta$)")
