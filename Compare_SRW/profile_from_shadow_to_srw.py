@@ -97,7 +97,7 @@ write_srw_format_profile(data,writesrwfile)
 #data=[x_srw,y_srw,z_srw]
 plt.plot(x_srw,z_srw[0])
 plt.show()
-
+ 
 
 ####################PSD calculation of new generated profile#########################
 dm = dabam.dabam()
